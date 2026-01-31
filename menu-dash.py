@@ -14,7 +14,7 @@ def _():
 
 @app.cell
 def _(pl):
-    df = pl.read_csv("metadata.csv")
+    df = pl.read_csv("https://raw.githubusercontent.com/r0man-ist/marimo-intro/refs/heads/main/metadata.csv")
     return (df,)
 
 
@@ -253,7 +253,6 @@ def _(alt, filtered_df, mo):
 
     scatter_chart = mo.ui.altair_chart(scatter)
     scatter_chart
-
     return
 
 
