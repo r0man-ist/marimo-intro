@@ -120,8 +120,8 @@ def _(mo):
 
 
 @app.cell
-def _(button, o):
-    o.stop (not button.value == "🐻🐻🐻")
+def _(button, mo):
+    mo.stop (not button.value == "🐻🐻🐻")
     button.value  
     return
 
